@@ -9,11 +9,11 @@ public class GameManager : MonoBehaviour {
 	public Camera mainCamera;
 	public float gameDurationSeconds;
 
-
+	private Spawn spawnScript;
 
 	// Use this for initialization
 	void Start () {
-		
+		spawnScript = gameObject.GetComponent<Spawn> ();
 	}
 
 	// Update is called once per frame
@@ -25,8 +25,7 @@ public class GameManager : MonoBehaviour {
 				print (hit.collider.name);
 			} else {
 				Vector3 sp = mainCamera.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 9));
-				GameObject response = responses [Random.Range (0, responses.Length)];
-				Instantiate (response, sp, Quaternion.identity);
+				spawnScript.SpawnResponse (sp, Quaternion.identity);
 			}
 		}
 	}
