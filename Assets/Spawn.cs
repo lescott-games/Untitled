@@ -24,7 +24,7 @@ public class Spawn : MonoBehaviour {
 	void OnValidate()
 	{
 		_totalSpawnWeight = 0f;
-		foreach(var spawnable in spawnList)
+		foreach(var spawnable in spawnList)	// wtf am i doing here??? isnt this javascript????? look up when have wifi access
 			_totalSpawnWeight += spawnable.weight;
 	}
 

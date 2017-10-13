@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806504400d13342d1a1c51ddb213198c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialColor: {r: 0.44852942, g: 0.9315416, b: 1, a: 1}
+  initialColor: {r: 0.9191176, g: 0.9191176, b: 0.9191176, a: 1}
   bottomColor: {r: 0, g: 0, b: 0, a: 1}
   newColor: {r: 1, g: 0.99509305, b: 0.56293255, a: 1}
   initialDuration: 1

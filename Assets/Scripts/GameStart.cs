@@ -7,24 +7,29 @@ using UnityEngine.SceneManagement;
 public class GameStart : MonoBehaviour {
 
 	public Text continueText;
-	public float textBlink;
-	public GameObject background;
+	public float textBlinkRate;
 
-	private float initialColor;
-	private Background bgScript;
-	private Renderer bgRenderer;
+	private bool titleSwitch = true;
+	private float textBlink;
 
 
 	// Use this for initialization
 	void Start () {
-		bgRenderer = background.GetComponent<Renderer> ();
-		bgScript = background.GetComponent<Background> ();
-		bgRenderer.material.color = bgScript.initialColor;
+		textBlink = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		textBlink = Random.value;
+		if (titleSwitch == true) {
+			textBlink -= textBlinkRate;
+		} else if (titleSwitch == false) {
+			textBlink += textBlinkRate;
+		}
+		if (textBlink <= 0) {
+			titleSwitch = false;
+		} else if (textBlink >= 1) {
+			titleSwitch = true;
+		}
 		continueText.color = Color.Lerp (Color.black, Color.white, textBlink);
 
 		if (Input.anyKeyDown)

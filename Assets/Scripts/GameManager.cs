@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour {
 	public float gameDurationSeconds;
 
 	private Spawn spawnScript;
+	private float timeHeldDown;
+	private float touchDown;
+	private float touchUp;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +29,19 @@ public class GameManager : MonoBehaviour {
 			} else {
 				Vector3 sp = mainCamera.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 9));
 				spawnScript.SpawnResponse (sp, Quaternion.identity);
+				print ("im on a plane");
+				timeHeldDown = Time.deltaTime;
+				print ("Time held down" + timeHeldDown);
 			}
 		}
+	}
+
+	void OnMouseDown() {
+		touchDown = Time.time;
+	}
+
+	void OnMouseUp() {
+		touchUp = Time.time;
+		timeHeldDown += touchUp - touchDown;
 	}
 }
