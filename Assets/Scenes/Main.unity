@@ -392,7 +392,6 @@ MonoBehaviour:
   - {fileID: 1686197094120474, guid: 302cdef25595a402490cff75722e8aa8, type: 2}
   - {fileID: 1377545980447560, guid: 271811aa863554613ad10423fba96fc5, type: 2}
   - {fileID: 1441200130721946, guid: 02b6d9fa1d1a04c93b5893d7fb472b09, type: 2}
-  mainCamera: {fileID: 386131294}
   gameDurationSeconds: 10
 --- !u!4 &1934662766
 Transform:
