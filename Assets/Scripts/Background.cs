@@ -12,21 +12,32 @@ public class Background : MonoBehaviour {
 	public float downShift = 0.0f;
 	public float upShift = 0.0f;
 	public Light mainLight;
-	public GameManager gameManager;
+	//public GameManager gameManager;
+	public float gameShift = 0.0f;
 
 	private float gameDuration;
 	private float initialShift = 0.0f;
 	private Renderer rend;
-	private float gameShift = 0.0f;
 	private Scene currentScene; 
+	private float timeHeldDown;
+	private float touchDown;
+	private float touchUp;
+	private int fps = 60;
+	private GameManager gameManager;
+	private Spawn spawn;
+
 
 
 	// Use this for initialization
 	void Start () {
 		rend = gameObject.GetComponent<Renderer> ();
 		rend.material.color = initialColor;
+		gameManager = GameObject.FindGameObjectWithTag ("GameController").GetComponent<GameManager> ();
 		gameDuration = gameManager.gameDurationSeconds;
 		currentScene = SceneManager.GetActiveScene ();
+		print ("Game duration: " + 1/(gameDuration*fps));
+		spawn = gameManager.GetComponent<Spawn> ();
+		spawn.ResetComponents ();
 	}
 	
 	// Update is called once per frame
@@ -38,8 +49,8 @@ public class Background : MonoBehaviour {
 				mainLight.intensity -= 0.01f;
 			} else if (Input.GetButton ("Interact")) {
 				rend.material.color = Color.Lerp (bottomColor, newColor, gameShift);
-				gameShift += Time.deltaTime * (1 / gameDuration);
-				gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
+				gameShift += (1 / (gameDuration*fps));
+				//gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
 				if (gameShift >= 0.75f) {
 					mainLight.intensity += 0.001f;
 					mainLight.intensity = Mathf.Clamp (mainLight.intensity, 0.0f, 0.75f);
@@ -69,5 +80,16 @@ public class Background : MonoBehaviour {
 		gameShift += (Time.deltaTime * (1 / gameDuration)) * upShift;
 		gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
 		mainLight.intensity += 0.001f;
+	}
+
+	void OnMouseDown() {
+		touchDown = Time.time;
+	}
+
+	void OnMouseUp() {
+		touchUp = Time.time;
+		timeHeldDown += touchUp - touchDown;
+		print ("Time held down: " + timeHeldDown);
+		print ("Game shift: " + gameShift);
 	}
 }

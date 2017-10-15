@@ -12,25 +12,24 @@ public class GameManager : MonoBehaviour {
 	public float gameDurationSeconds;
 
 	private Spawn spawnScript;
-	private float timeHeldDown;
-	private float touchDown;
-	private float touchUp;
 
 
 	void Awake() {
 		if (instance == null) {			// To enforce Singleton pattern for manager.
 			instance = this;
+			gameDurationSeconds = Random.Range (300, 500);
 		} else if (instance != this) {
 			Destroy (gameObject);
+			gameDurationSeconds = instance.gameDurationSeconds;
 		}
 
 		DontDestroyOnLoad (gameObject);
+
 	}
 
 	// Use this for initialization
 	void Start () {
 		spawnScript = gameObject.GetComponent<Spawn> ();
-		gameDurationSeconds = Random.Range (300, 500);
 	}
 
 	// Update is called once per frame
@@ -47,19 +46,8 @@ public class GameManager : MonoBehaviour {
 				Vector3 sp = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 9));
 				//Vector3 sp = mainCamera.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 9));
 				spawnScript.SpawnResponse (sp, Quaternion.identity);
-				print ("im on a plane");
-				timeHeldDown = Time.deltaTime;
-				print ("Time held down" + timeHeldDown);
 			}
 		}
 	}
-
-	void OnMouseDown() {
-		touchDown = Time.time;
-	}
-
-	void OnMouseUp() {
-		touchUp = Time.time;
-		timeHeldDown += touchUp - touchDown;
-	}
+		
 }
