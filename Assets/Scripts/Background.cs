@@ -9,11 +9,13 @@ public class Background : MonoBehaviour {
 	public Color bottomColor = Color.blue;
 	public Color newColor = Color.blue;
 	public float initialDuration = 0.0f;
-	public float downShift = 0.0f;
-	public float upShift = 0.0f;
+	//public float downShift = 0.0f;
+	//public float upShift = 0.0f;
 	public Light mainLight;
 	//public GameManager gameManager;
+	[HideInInspector]
 	public float gameShift = 0.0f;
+	public float shiftSpeedMultiplier;
 
 	private float gameDuration;
 	private float initialShift = 0.0f;
@@ -25,6 +27,7 @@ public class Background : MonoBehaviour {
 	private int fps = 60;
 	private GameManager gameManager;
 	private Spawn spawn;
+	private float shiftSpeed;
 
 
 
@@ -38,6 +41,7 @@ public class Background : MonoBehaviour {
 		print ("Game duration: " + 1/(gameDuration*fps));
 		spawn = gameManager.GetComponent<Spawn> ();
 		spawn.ResetComponents ();
+		shiftSpeed = (1 / (gameDuration * fps));
 	}
 	
 	// Update is called once per frame
@@ -49,7 +53,8 @@ public class Background : MonoBehaviour {
 				mainLight.intensity -= 0.01f;
 			} else if (Input.GetButton ("Interact")) {
 				rend.material.color = Color.Lerp (bottomColor, newColor, gameShift);
-				gameShift += (1 / (gameDuration*fps));
+				//gameShift += (1 / (gameDuration*fps));
+				gameShift += shiftSpeed;
 				//gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
 				if (gameShift >= 0.75f) {
 					mainLight.intensity += 0.001f;
@@ -69,7 +74,8 @@ public class Background : MonoBehaviour {
 	public void ReverseShift()
 	{
 		rend.material.color = Color.Lerp (bottomColor, newColor, gameShift);
-		gameShift -= (Time.deltaTime * (1 / gameDuration)) * downShift;
+		//gameShift -= (Time.deltaTime * (1 / gameDuration)) * upShift;
+		gameShift -= (shiftSpeed * shiftSpeedMultiplier);
 		gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
 		mainLight.intensity -= 0.001f;
 	}
@@ -77,7 +83,8 @@ public class Background : MonoBehaviour {
 	public void ShiftUp()
 	{
 		rend.material.color = Color.Lerp (newColor, bottomColor, gameShift);
-		gameShift += (Time.deltaTime * (1 / gameDuration)) * upShift;
+		gameShift += (shiftSpeed * shiftSpeedMultiplier);
+		//gameShift += (Time.deltaTime * (1 / gameDuration)) * upShift;
 		gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
 		mainLight.intensity += 0.001f;
 	}
