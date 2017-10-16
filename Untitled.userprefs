@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RNegAudio.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ILong.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="48" Column="25" />
-      <File FileName="Assets/Spawn.cs" Line="32" Column="40" />
-      <File FileName="Assets/Scripts/GameStart.cs" Line="17" Column="17" />
-      <File FileName="Assets/Scripts/Background.cs" Line="40" Column="3" />
-      <File FileName="Assets/Scripts/RNegAudio.cs" Line="18" Column="3" />
+      <File FileName="Assets/Scripts/RRevert.cs" Line="14" Column="30" />
+      <File FileName="Assets/Scripts/Background.cs" Line="13" Column="4" />
+      <File FileName="Assets/Scripts/RContent.cs" Line="9" Column="30" />
+      <File FileName="Assets/Scripts/IBrief.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ILong.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

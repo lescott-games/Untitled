@@ -55,6 +55,7 @@
      <Compile Include="Assets\ParticleScript.cs" />
      <Compile Include="Assets\ParticleScript2.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
+     <Compile Include="Assets\Scripts\DragAndDrop.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameStart.cs" />
      <Compile Include="Assets\Scripts\IBrief.cs" />
