@@ -16,12 +16,12 @@ public class Background : MonoBehaviour {
 	[HideInInspector]
 	public float gameShift = 0.0f;
 	public float shiftSpeedMultiplier;
+	public float timeHeldDown;
 
 	private float gameDuration;
 	private float initialShift = 0.0f;
 	private Renderer rend;
 	private Scene currentScene; 
-	private float timeHeldDown;
 	private float touchDown;
 	private float touchUp;
 	private int fps = 60;
