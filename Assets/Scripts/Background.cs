@@ -42,6 +42,9 @@ public class Background : MonoBehaviour {
 		spawn = gameManager.GetComponent<Spawn> ();
 		spawn.ResetComponents ();
 		shiftSpeed = (1 / (gameDuration * fps));
+		if (Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.Android) {
+			shiftSpeed = shiftSpeed * 2;
+		}
 	}
 	
 	// Update is called once per frame

@@ -111,6 +111,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 787047121df3ada1aa35349e0edc6eef Assembly-CSharp.dll:.Acts
+437f19363d211d096e3436f842f1b8c2 Assembly-CSharp.dll:.DebugInfo
 787047121df3ada1aa35349e0edc6eef Assembly-CSharp.dll:.Spawn
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DragAndDrop
 8ecfc67570af623ce0aea8dd3fc6a7c0 Assembly-CSharp.dll:.IBrief
@@ -147,4 +148,3 @@ d5330e83db0b2687612f50c80ef5495d Assembly-UnityScript.dll:.Spinning
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RBrief
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RHappy
 3e142ee92f103ab1b91950de940fba81 Assembly-CSharp.dll:.ParticleScript2
-437f19363d211d096e3436f842f1b8c2 Assembly-CSharp.dll:.DebugInfo
