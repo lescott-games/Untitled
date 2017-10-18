@@ -6,10 +6,15 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
 	public static GameManager instance = null;
+	public static float timer = 0;
 
 	public GameObject[] responses;
 	//public Camera mainCamera;
 	public float gameDurationSeconds;
+	[HideInInspector]
+	public string niceTimer;
+	public int timeSeconds;
+	public int timeMinutes;
 
 	private Spawn spawnScript;
 
@@ -48,6 +53,11 @@ public class GameManager : MonoBehaviour {
 				spawnScript.SpawnResponse (sp, Quaternion.identity);
 			}
 		}
+
+		timer += Time.deltaTime;
+		timeMinutes = Mathf.FloorToInt (timer / 60f);
+		timeSeconds = Mathf.FloorToInt (timer - timeMinutes * 60);
+		niceTimer = string.Format ("{0:00}:{1:00}", timeMinutes, timeSeconds);
 	}
 		
 }

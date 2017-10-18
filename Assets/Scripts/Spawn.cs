@@ -80,9 +80,9 @@ public class Spawn : MonoBehaviour {
 		float pick = Random.value * _totalSpawnWeight;
 		int chosenIndex = 0;
 		float cumulativeWeight = spawnList[0].weight;
-		print ("Pick: " + pick);
-		print ("Cumulative weight: " + cumulativeWeight);
-		print ("Total spawn weight 2: " + _totalSpawnWeight);
+		//print ("Pick: " + pick);
+		//print ("Cumulative weight: " + cumulativeWeight);
+		//print ("Total spawn weight 2: " + _totalSpawnWeight);
 
 
 		// Step through the list until we've accumulated more weight than this.
@@ -91,7 +91,7 @@ public class Spawn : MonoBehaviour {
 		{
 			chosenIndex++;
 			cumulativeWeight += spawnList[chosenIndex].weight;
-			print ("Cum weight 2: " + cumulativeWeight);
+			//print ("Cum weight 2: " + cumulativeWeight);
 		}
 
 		// Spawn the chosen item.
@@ -111,6 +111,7 @@ public class Spawn : MonoBehaviour {
 			spawnList [7].weight = 0f;
 			spawnList [8].weight = 0f;
 			spawnList [9].weight = 0f;
+			spawnList [10].weight = 0f;
 		} else if (shift > 0.16f && shift <= 0.25f) {
 			spawnList [0].weight = 3f;
 			spawnList [1].weight = 1f;
@@ -122,28 +123,31 @@ public class Spawn : MonoBehaviour {
 			spawnList [7].weight = 0f;
 			spawnList [8].weight = 0f;
 			spawnList [9].weight = 0f;
+			spawnList [10].weight = 0f;
 		} else if (shift > 0.25f && shift <= 0.5f) {
 			spawnList [0].weight = 2f;
 			spawnList [1].weight = 1f;
 			spawnList [2].weight = 1f;
 			spawnList [3].weight = 1f;
-			spawnList [4].weight = 0f;
-			spawnList [5].weight = 0f;
+			spawnList [4].weight = 1f;
+			spawnList [5].weight = 1f;
 			spawnList [6].weight = 0f;
 			spawnList [7].weight = 0f;
 			spawnList [8].weight = 0f;
 			spawnList [9].weight = 0f;
+			spawnList [10].weight = 0f;
 		} else if (shift > 0.5f && shift <= 0.75) {
 			spawnList [0].weight = 1f;
 			spawnList [1].weight = 1f;
 			spawnList [2].weight = 2f;
 			spawnList [3].weight = 2f;
 			spawnList [4].weight = 2f;
-			spawnList [5].weight = 0f;
-			spawnList [6].weight = 0f;
-			spawnList [7].weight = 0f;
+			spawnList [5].weight = 1f;
+			spawnList [6].weight = 1f;
+			spawnList [7].weight = 1f;
 			spawnList [8].weight = 0f;
 			spawnList [9].weight = 0f;
+			spawnList [10].weight = 0f;
 		} else if (shift > 0.75 && shift <= 0.99) {
 			spawnList [0].weight = 1f;
 			spawnList [1].weight = 1f;
@@ -155,6 +159,19 @@ public class Spawn : MonoBehaviour {
 			spawnList [7].weight = 2f;
 			spawnList [8].weight = 2f;
 			spawnList [9].weight = 2f;
+			spawnList [10].weight = 0f;
+		} else if (shift > 0.99) {
+			spawnList [0].weight = 1f;
+			spawnList [1].weight = 1f;
+			spawnList [2].weight = 1f;
+			spawnList [3].weight = 1f;
+			spawnList [4].weight = 1f;
+			spawnList [5].weight = 1f;
+			spawnList [6].weight = 1f;
+			spawnList [7].weight = 1f;
+			spawnList [8].weight = 1f;
+			spawnList [9].weight = 1f;
+			spawnList [10].weight = 10f;
 		}
 
 		_totalSpawnWeight = 0f;

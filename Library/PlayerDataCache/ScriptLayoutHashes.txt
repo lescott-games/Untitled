@@ -148,3 +148,4 @@ d5330e83db0b2687612f50c80ef5495d Assembly-UnityScript.dll:.Spinning
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RBrief
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RHappy
 3e142ee92f103ab1b91950de940fba81 Assembly-CSharp.dll:.ParticleScript2
+a5b8b1b7a1ea186a034c7f2cb86a8fc4 Assembly-CSharp.dll:.RGratitude
