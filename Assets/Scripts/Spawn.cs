@@ -20,9 +20,9 @@ public class Spawn : MonoBehaviour {
 	private float _totalSpawnWeight;
 
 	private float gameShift;
-	private GameManager gameManager;
+	//private GameManager gameManager;
 	private GameObject bg;
-	private int fps = 60;
+	//private int fps = 60;
 
 	// Update the total weight when the user modifies Inspector properties,
 	// and on initialization at runtime.
@@ -44,7 +44,7 @@ public class Spawn : MonoBehaviour {
 	void Awake()
 	{
 		//OnValidate();
-		gameManager = gameObject.GetComponent<GameManager> ();
+		//gameManager = gameObject.GetComponent<GameManager> ();
 		bg = GameObject.FindGameObjectWithTag ("Background");
 	}
 
@@ -57,7 +57,7 @@ public class Spawn : MonoBehaviour {
 	public void ResetComponents()
 	{
 		//OnValidate();
-		gameManager = gameObject.GetComponent<GameManager> ();
+		//gameManager = gameObject.GetComponent<GameManager> ();
 		bg = GameObject.FindGameObjectWithTag ("Background");
 		//print ("Components reset");
 	}

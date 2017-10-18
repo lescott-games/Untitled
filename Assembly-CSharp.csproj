@@ -51,9 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Acts.cs" />
-     <Compile Include="Assets\ParticleScript.cs" />
-     <Compile Include="Assets\ParticleScript2.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\DebugInfo.cs" />
      <Compile Include="Assets\Scripts\DragAndDrop.cs" />

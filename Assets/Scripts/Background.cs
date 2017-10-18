@@ -31,8 +31,8 @@ public class Background : MonoBehaviour {
 	private GameManager gameManager;
 	private Spawn spawn;
 	private float shiftSpeed;
-	private bool contactLimitToggle = true;
-	private Spawn spawnScript;
+	//private bool contactLimitToggle = true;
+	//private Spawn spawnScript;
 
 
 
@@ -50,7 +50,7 @@ public class Background : MonoBehaviour {
 		if (Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.Android) {
 			shiftSpeed = shiftSpeed * 2;
 		}
-		spawnScript = gameObject.GetComponent<Spawn> ();
+		//spawnScript = gameObject.GetComponent<Spawn> ();
 	}
 	
 	// Update is called once per frame
@@ -75,13 +75,9 @@ public class Background : MonoBehaviour {
 
 				touchTime += Time.deltaTime;
 				int minutes = Mathf.FloorToInt (touchTime / 60f);
-				int seconds = Mathf.FloorToInt (touchTime - minutes * 60);
-
+				//int seconds = Mathf.FloorToInt (touchTime - minutes * 60);
 			
-
 				if (touchTime >= contactLimit) {
-					print ("Should spawn an RTooMuch.");
-			
 					touchTime = 0;
 					Vector3 screenPoint = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 1));
 					RaycastHit2D hit = Physics2D.Raycast (new Vector2 (Camera.main.transform.position.x, Camera.main.transform.position.y), new Vector2 (screenPoint.x, screenPoint.y));

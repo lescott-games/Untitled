@@ -9,7 +9,6 @@ public class DebugInfo : MonoBehaviour {
 	public Background background;
 
 	private bool debugToggle = false;
-	private bool pressedDown = false;
 	private Button btn;
 	private Background bg;
 	private Text text;

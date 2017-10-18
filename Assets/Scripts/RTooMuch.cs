@@ -16,23 +16,4 @@ public class RTooMuch : MonoBehaviour {
 			Destroy (gameObject, 0.5f);
 		}
 	}
-
-	void OnMouseUp() {
-		print ("Mouse up.");
-		Destroy (gameObject, 0.5f);
-	}
-
-/*
-	void OnMouseDown() {
-		CancelInvoke ("DestroyMe");
-	}
-
-	void OnMouseUp() {
-		Invoke ("DestroyMe", 3.0f);
-	}
-
-	void DestroyMe() {
-		Destroy (gameObject, 3.0f);
-	}
-*/
 }
