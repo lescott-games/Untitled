@@ -16,6 +16,16 @@ public class Spawn : MonoBehaviour {
 	// Now expose an array of these to be populated in the Inspector.
 	public Spawnable[] spawnList;
 
+	//public float phase1 = 0.0f;
+	public float phase2 = 0.16f;
+	public float phase3 = 0.25f;
+	public float phase4 = 0.5f;
+	public float phase5 = 0.75f;
+	public float phase6 = 0.99f;
+
+	[HideInInspector]
+	public string phase;
+
 	// Track the total weight used in the whole array.
 	private float _totalSpawnWeight;
 
@@ -100,7 +110,7 @@ public class Spawn : MonoBehaviour {
 
 	public void ChangeWeights(float shift)
 	{
-		if (shift > 0f && shift <= 0.16f) {
+		if (shift > 0f && shift <= phase2) {
 			spawnList [0].weight = 5f;
 			spawnList [1].weight = 1f;
 			spawnList [2].weight = 0f;
@@ -112,7 +122,8 @@ public class Spawn : MonoBehaviour {
 			spawnList [8].weight = 0f;
 			spawnList [9].weight = 0f;
 			spawnList [10].weight = 0f;
-		} else if (shift > 0.16f && shift <= 0.25f) {
+			phase = "1";
+		} else if (shift > phase2 && shift <= phase3) {
 			spawnList [0].weight = 3f;
 			spawnList [1].weight = 1f;
 			spawnList [2].weight = 1f;
@@ -124,7 +135,8 @@ public class Spawn : MonoBehaviour {
 			spawnList [8].weight = 0f;
 			spawnList [9].weight = 0f;
 			spawnList [10].weight = 0f;
-		} else if (shift > 0.25f && shift <= 0.5f) {
+			phase = "2";
+		} else if (shift > phase3 && shift <= phase4) {
 			spawnList [0].weight = 2f;
 			spawnList [1].weight = 1f;
 			spawnList [2].weight = 1f;
@@ -136,7 +148,8 @@ public class Spawn : MonoBehaviour {
 			spawnList [8].weight = 0f;
 			spawnList [9].weight = 0f;
 			spawnList [10].weight = 0f;
-		} else if (shift > 0.5f && shift <= 0.75) {
+			phase = "3";
+		} else if (shift > phase4 && shift <= phase5) {
 			spawnList [0].weight = 1f;
 			spawnList [1].weight = 1f;
 			spawnList [2].weight = 2f;
@@ -148,7 +161,8 @@ public class Spawn : MonoBehaviour {
 			spawnList [8].weight = 0f;
 			spawnList [9].weight = 0f;
 			spawnList [10].weight = 0f;
-		} else if (shift > 0.75 && shift <= 0.99) {
+			phase = "4";
+		} else if (shift > phase5 && shift <= phase6) {
 			spawnList [0].weight = 1f;
 			spawnList [1].weight = 1f;
 			spawnList [2].weight = 1f;
@@ -160,7 +174,8 @@ public class Spawn : MonoBehaviour {
 			spawnList [8].weight = 2f;
 			spawnList [9].weight = 2f;
 			spawnList [10].weight = 0f;
-		} else if (shift > 0.99) {
+			phase = "5";
+		} else if (shift > phase6) {
 			spawnList [0].weight = 1f;
 			spawnList [1].weight = 1f;
 			spawnList [2].weight = 1f;
@@ -172,6 +187,7 @@ public class Spawn : MonoBehaviour {
 			spawnList [8].weight = 1f;
 			spawnList [9].weight = 1f;
 			spawnList [10].weight = 10f;
+			phase = "6, Finished";
 		}
 
 		_totalSpawnWeight = 0f;

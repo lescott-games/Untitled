@@ -14,6 +14,7 @@ public class DebugInfo : MonoBehaviour {
 	private Text text;
 	private Text txt;
 	private GameManager gameManager;
+	private Spawn spawn;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,7 @@ public class DebugInfo : MonoBehaviour {
 		txt = gameObject.GetComponent<Text> ();
 		btn.onClick.AddListener (ToggleInfo);
 		gameManager = GameObject.FindGameObjectWithTag ("GameController").GetComponent<GameManager> ();
+		spawn = GameObject.FindGameObjectWithTag ("GameController").GetComponent<Spawn> ();
 	}
 	
 	// Update is called once per frame
@@ -32,7 +34,8 @@ public class DebugInfo : MonoBehaviour {
 				"\nTouch time: " + bg.timeHeldDown + " seconds" +
 				"\nPercent of game finished: " + bg.gameShift + "%" +
 				"\nGame time: " + gameManager.niceTimer +
-				"\nTouch time: " + bg.touchTime;
+				"\nTouch time: " + bg.touchTime + 
+				"\nGame phase: " + spawn.phase;
 			//print ("Should be updating debug.");
 		}
 	}
@@ -43,7 +46,8 @@ public class DebugInfo : MonoBehaviour {
 				"\nTouch time: " + bg.timeHeldDown + " seconds" +
 				"\nPercent of game finished: " + bg.gameShift + "%" +
 				"\nGame time: " + gameManager.niceTimer +
-				"\nTouch time: " + bg.touchTime;
+				"\nTouch time: " + bg.touchTime + 
+				"\nGame phase: " + spawn.phase;
 			debugToggle = true;
 		} else {
 			txt.text = "";
