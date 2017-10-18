@@ -175,7 +175,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: tap to continue
+  m_Text: tap to play
 --- !u!222 &125137425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -346,6 +346,11 @@ MonoBehaviour:
   - gameObject: {fileID: 1844886469732350, guid: 8a6ed946955564ccaaa025dc428449af,
       type: 2}
     weight: 0
+  phase2: 0.16
+  phase3: 0.25
+  phase4: 0.5
+  phase5: 0.75
+  phase6: 0.99
   phase: 
 --- !u!1 &555929565
 GameObject:
@@ -745,7 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 125137424}
-  textBlinkRate: 0.01
+  textBlinkRate: 0.015
 --- !u!4 &1962594898
 Transform:
   m_ObjectHideFlags: 0
