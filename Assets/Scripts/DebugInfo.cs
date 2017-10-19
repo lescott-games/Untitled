@@ -34,7 +34,7 @@ public class DebugInfo : MonoBehaviour {
 				"\nTouch time: " + bg.timeHeldDown + " seconds" +
 				"\nPercent of game finished: " + bg.gameShift + "%" +
 				"\nGame time: " + gameManager.niceTimer +
-				"\nTouch time: " + bg.touchTime + 
+				"\nContinuous touch time: " + bg.touchTime + 
 				"\nGame phase: " + spawn.phase;
 			//print ("Should be updating debug.");
 		}
@@ -46,7 +46,7 @@ public class DebugInfo : MonoBehaviour {
 				"\nTouch time: " + bg.timeHeldDown + " seconds" +
 				"\nPercent of game finished: " + bg.gameShift + "%" +
 				"\nGame time: " + gameManager.niceTimer +
-				"\nTouch time: " + bg.touchTime + 
+				"\nContinuous touch time: " + bg.touchTime + 
 				"\nGame phase: " + spawn.phase;
 			debugToggle = true;
 		} else {

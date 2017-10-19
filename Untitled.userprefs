@@ -1,11 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Background.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/IBrief.cs">
     <Files>
-      <File FileName="Assets/Scripts/Background.cs" Line="76" Column="38" />
-      <File FileName="Assets/Scripts/RTooMuch.cs" Line="22" Column="22" />
-      <File FileName="Assets/Scripts/Spawn.cs" Line="94" Column="6" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="32" Column="51" />
+      <File FileName="Assets/Scripts/RRevert.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Background.cs" Line="49" Column="41" />
+      <File FileName="Assets/Scripts/RTooMuch.cs" Line="16" Column="31" />
+      <File FileName="Assets/Scripts/Spawn.cs" Line="112" Column="44" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="36" Column="17" />
+      <File FileName="Assets/Scripts/DebugInfo.cs" Line="49" Column="29" />
+      <File FileName="Assets/Scripts/DragAndDrop.cs" Line="3" Column="19" />
+      <File FileName="Assets/Scripts/IBrief.cs" Line="31" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -112,8 +112,9 @@ MonoBehaviour:
   newColor: {r: 1, g: 0.99509305, b: 0.56293255, a: 1}
   initialDuration: 1
   mainLight: {fileID: 0}
-  contactLimit: 3
+  contactLimit: 6
   RTooMuch: {fileID: 1007747580051822, guid: 5e6840e8036eb4e749be4ab96874d56d, type: 2}
   gameShift: 0
-  shiftSpeedMultiplier: 500
+  shiftSpeedMultiplier: 1
   timeHeldDown: 0
+  touchTime: 0

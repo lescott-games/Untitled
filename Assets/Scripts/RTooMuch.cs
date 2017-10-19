@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class RTooMuch : MonoBehaviour {
 
+	public float min = -5.0f;
+	public float max = 5.0f;
+	public float rate = 0.1f;
+
+	private float t = 0.0f;
+
 	// Use this for initialization
 	void Start () {
 		//Destroy (gameObject, 3.0f);
@@ -15,5 +21,17 @@ public class RTooMuch : MonoBehaviour {
 		    && Input.GetMouseButton (1) == false)) {
 			Destroy (gameObject, 0.5f);
 		}
+
+		transform.localScale = new Vector3 (Mathf.Lerp (min, max, t), Mathf.Lerp (min, max, t));
+
+		t += rate * Time.deltaTime;
+
+		if (t > 1.0f) {
+			float temp = max;
+			max = min;
+			min = temp;
+			t = 0.0f;
+		}
+		 
 	}
 }

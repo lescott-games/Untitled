@@ -105,6 +105,12 @@ public class Spawn : MonoBehaviour {
 		}
 
 		// Spawn the chosen item.
+		if (spawnList [chosenIndex].gameObject.name == "IBrief") {
+			print ("IBrief before position: " + pos);
+			pos.x = Random.Range (0, Screen.width);
+			pos.y = Random.Range (0, Screen.height);
+			print ("IBrief after position: " + pos);
+		}
 		Instantiate(spawnList[chosenIndex].gameObject, pos, qua);
 	}
 

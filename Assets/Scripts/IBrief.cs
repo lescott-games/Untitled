@@ -8,7 +8,7 @@ public class IBrief : MonoBehaviour {
 	private Background bgScript;
 	private SpriteRenderer sr;
 
-	public int colorChange = 20;
+	//public int colorChange = 20;
 
 	// Use this for initialization
 	void Start () {
@@ -16,7 +16,7 @@ public class IBrief : MonoBehaviour {
 		bgScript = background.GetComponent<Background> ();
 		sr = gameObject.GetComponent<SpriteRenderer> ();
 		print ("Initial color: " + sr.color);
-		Destroy (gameObject, 2.0f);
+		Destroy (gameObject, 20.0f);
 	}
 
 	void OnMouseDrag () {
@@ -29,6 +29,5 @@ public class IBrief : MonoBehaviour {
 
 	void OnMouseUp(){
 		sr.color = Color.white;
-		//
 	}
 }

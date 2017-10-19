@@ -17,7 +17,7 @@ public class Background : MonoBehaviour {
 	public GameObject RTooMuch;
 	[HideInInspector]
 	public float gameShift = 0.0f;
-	public float shiftSpeedMultiplier;
+	public float shiftSpeedMultiplier = 1;
 	public float timeHeldDown;
 	public float touchTime = 0;
 
@@ -64,7 +64,7 @@ public class Background : MonoBehaviour {
 				|| Input.GetMouseButton(1) == true)) {
 				rend.material.color = Color.Lerp (bottomColor, newColor, gameShift);
 				//gameShift += (1 / (gameDuration*fps));
-				gameShift += shiftSpeed;
+				gameShift += (shiftSpeed * shiftSpeedMultiplier);
 				//gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
 				if (gameShift >= 0.75f) {
 					mainLight.intensity += 0.001f;
@@ -76,9 +76,11 @@ public class Background : MonoBehaviour {
 				touchTime += Time.deltaTime;
 				int minutes = Mathf.FloorToInt (touchTime / 60f);
 				//int seconds = Mathf.FloorToInt (touchTime - minutes * 60);
+				timeHeldDown += Time.deltaTime;
 			
 				if (touchTime >= contactLimit) {
 					touchTime = 0;
+					contactLimit = Random.Range (7, 15);
 					Vector3 screenPoint = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 1));
 					RaycastHit2D hit = Physics2D.Raycast (new Vector2 (Camera.main.transform.position.x, Camera.main.transform.position.y), new Vector2 (screenPoint.x, screenPoint.y));
 
@@ -102,7 +104,7 @@ public class Background : MonoBehaviour {
 	{
 		rend.material.color = Color.Lerp (bottomColor, newColor, gameShift);
 		//gameShift -= (Time.deltaTime * (1 / gameDuration)) * upShift;
-		gameShift -= shiftSpeed;
+		gameShift -= (shiftSpeed * shiftSpeedMultiplier) * 0.1f;
 		gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
 		mainLight.intensity -= 0.0001f;
 	}
@@ -110,7 +112,7 @@ public class Background : MonoBehaviour {
 	public void ShiftUp()
 	{
 		rend.material.color = Color.Lerp (newColor, bottomColor, gameShift);
-		gameShift += shiftSpeed;
+		gameShift += (shiftSpeed * shiftSpeedMultiplier) * 0.1f;
 		//gameShift += (Time.deltaTime * (1 / gameDuration)) * upShift;
 		gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
 		mainLight.intensity += 0.0001f;
@@ -122,9 +124,6 @@ public class Background : MonoBehaviour {
 
 	void OnMouseUp() {
 		touchUp = Time.time;
-		timeHeldDown += touchUp - touchDown;
-		print ("Time held down: " + timeHeldDown);
-		print ("Game shift: " + gameShift);
 		touchTime = 0;
 	}
 }

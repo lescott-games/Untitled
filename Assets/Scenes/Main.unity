@@ -801,6 +801,9 @@ MonoBehaviour:
   - {fileID: 1377545980447560, guid: 271811aa863554613ad10423fba96fc5, type: 2}
   - {fileID: 1441200130721946, guid: 02b6d9fa1d1a04c93b5893d7fb472b09, type: 2}
   gameDurationSeconds: 10
+  niceTimer: 
+  timeSeconds: 0
+  timeMinutes: 0
 --- !u!4 &1934662766
 Transform:
   m_ObjectHideFlags: 0
@@ -835,3 +838,9 @@ MonoBehaviour:
   - gameObject: {fileID: 1819792518976452, guid: 939a405d3518b476bb7e7b6c84339976,
       type: 2}
     weight: 3
+  phase2: 0.16
+  phase3: 0.25
+  phase4: 0.5
+  phase5: 0.75
+  phase6: 0.99
+  phase: 
