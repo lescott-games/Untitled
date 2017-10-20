@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\RContent.cs" />
      <Compile Include="Assets\Scripts\RGratitude.cs" />
      <Compile Include="Assets\Scripts\RHappy.cs" />
+     <Compile Include="Assets\Scripts\RHiLo.cs" />
      <Compile Include="Assets\Scripts\RNegAudio.cs" />
      <Compile Include="Assets\Scripts\RNothing.cs" />
      <Compile Include="Assets\Scripts\RRevert.cs" />

@@ -16,7 +16,7 @@ public class IBrief : MonoBehaviour {
 		bgScript = background.GetComponent<Background> ();
 		sr = gameObject.GetComponent<SpriteRenderer> ();
 		print ("Initial color: " + sr.color);
-		Destroy (gameObject, 20.0f);
+		Destroy (gameObject, 4.0f);
 	}
 
 	void OnMouseDrag () {

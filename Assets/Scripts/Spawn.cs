@@ -103,14 +103,19 @@ public class Spawn : MonoBehaviour {
 			cumulativeWeight += spawnList[chosenIndex].weight;
 			//print ("Cum weight 2: " + cumulativeWeight);
 		}
-
-		// Spawn the chosen item.
-		if (spawnList [chosenIndex].gameObject.name == "IBrief") {
+			
+		if (spawnList [chosenIndex].gameObject.name == "IBrief" || spawnList [chosenIndex].gameObject.name == "ILong"
+			|| spawnList [chosenIndex].gameObject.name == "ITrail") {
 			print ("IBrief before position: " + pos);
+			Vector3 tmp;
 			pos.x = Random.Range (0, Screen.width);
 			pos.y = Random.Range (0, Screen.height);
+			pos.z = 10;
+			pos = Camera.main.ScreenToWorldPoint (pos);
 			print ("IBrief after position: " + pos);
 		}
+
+		// Spawn the chosen item.
 		Instantiate(spawnList[chosenIndex].gameObject, pos, qua);
 	}
 
