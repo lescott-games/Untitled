@@ -1,6 +1,6 @@
 iOS
 c5e24a4fd2f779c39b26e5edfc616fac Assembly-CSharp.dll:.Background
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RTooMuch
+c6caa7d2f278c8e525f5eaf6fe1d67b6 Assembly-CSharp.dll:.RTooMuch
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 9f07aaefd0255462bb6e4f9e5da6b2d4 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -115,8 +115,9 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 437f19363d211d096e3436f842f1b8c2 Assembly-CSharp.dll:.DebugInfo
 5d68298013b676fb86a202fe38209eac Assembly-CSharp.dll:.Spawn
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DragAndDrop
-8ecfc67570af623ce0aea8dd3fc6a7c0 Assembly-CSharp.dll:.IBrief
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.IBrief
 8ecfc67570af623ce0aea8dd3fc6a7c0 Assembly-CSharp.dll:.ILong
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RHiLo
 57e29913d2a4f3a06abd69658bf79928 Assembly-CSharp.dll:.GameStart
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -146,4 +147,5 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 d5330e83db0b2687612f50c80ef5495d Assembly-UnityScript.dll:.Spinning
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RNegAudio
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RBrief
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TouchRadiate
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RHappy

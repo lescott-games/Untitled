@@ -115,6 +115,6 @@ MonoBehaviour:
   contactLimit: 6
   RTooMuch: {fileID: 1007747580051822, guid: 5e6840e8036eb4e749be4ab96874d56d, type: 2}
   gameShift: 0
-  shiftSpeedMultiplier: 1
+  shiftSpeedMultiplier: 10
   timeHeldDown: 0
   touchTime: 0

@@ -20,6 +20,7 @@ public class Background : MonoBehaviour {
 	public float shiftSpeedMultiplier = 1;
 	public float timeHeldDown;
 	public float touchTime = 0;
+	//public GameObject border;
 
 	private float gameDuration;
 	private float initialShift = 0.0f;
@@ -58,11 +59,13 @@ public class Background : MonoBehaviour {
 		if (currentScene.name == "Main") {
 			if (initialShift <= 1) {
 				rend.material.color = Color.Lerp (initialColor, bottomColor, initialShift);
+				//border.GetComponent<Renderer>().material.color = Color.Lerp (initialColor, bottomColor, initialShift);
 				initialShift += Time.deltaTime * (1 / initialDuration);
 				mainLight.intensity -= 0.01f;
 			} else if ((Input.touchCount > 1 || Input.GetMouseButton(0) == true 
 				|| Input.GetMouseButton(1) == true)) {
 				rend.material.color = Color.Lerp (bottomColor, newColor, gameShift);
+				//border.GetComponent<Renderer>().material.color = Color.Lerp (bottomColor, newColor, gameShift);
 				//gameShift += (1 / (gameDuration*fps));
 				gameShift += (shiftSpeed * shiftSpeedMultiplier);
 				//gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
@@ -125,5 +128,12 @@ public class Background : MonoBehaviour {
 	void OnMouseUp() {
 		touchUp = Time.time;
 		touchTime = 0;
+	}
+
+	public void StopShift() {
+		if ((Input.touchCount > 1 || Input.GetMouseButton (0) == true
+		    || Input.GetMouseButton (1) == true)) {
+			gameShift -= (shiftSpeed * shiftSpeedMultiplier);
+		}
 	}
 }
