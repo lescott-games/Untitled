@@ -1,0 +1,26 @@
+{
+"skeleton": {
+	"hash": "9gmuSYOXQTQ9j+49Zzf+6dQVM+M",
+	"spine": "3.6.48",
+	"width": 131,
+	"height": 120,
+	"images": "../Illustrations/RTooMuch/images/"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "body", "parent": "root", "x": -0.37, "y": 0.34 }
+],
+"slots": [
+	{ "name": "body", "bone": "body", "attachment": "body" }
+],
+"skins": {
+	"default": {
+		"body": {
+			"body": { "path": "Layer_1", "x": 0.91, "y": 2.23, "width": 131, "height": 120 }
+		}
+	}
+},
+"animations": {
+	"animation": {}
+}
+}

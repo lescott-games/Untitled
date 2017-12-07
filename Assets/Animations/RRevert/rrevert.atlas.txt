@@ -1,0 +1,41 @@
+
+rrevert.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bleft
+  rotate: false
+  xy: 278, 314
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+bright
+  rotate: false
+  xy: 2, 29
+  size: 32, 33
+  orig: 32, 33
+  offset: 0, 0
+  index: -1
+center
+  rotate: false
+  xy: 2, 64
+  size: 274, 282
+  orig: 274, 282
+  offset: 0, 0
+  index: -1
+tleft
+  rotate: false
+  xy: 36, 48
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+tright
+  rotate: false
+  xy: 2, 2
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1

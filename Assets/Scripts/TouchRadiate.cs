@@ -1,13 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Spine;
+using Spine.Unity;
 
 public class TouchRadiate : MonoBehaviour {
 
+	[SpineEvent] public string animationEventName = "animation";
+	SkeletonAnimation skeletonAnimation;
+	MeshRenderer meshRenderer;
 
 	// Use this for initialization
 	void Start () {
-		
+		skeletonAnimation = GetComponent<SkeletonAnimation> ();
+		skeletonAnimation.state.SetAnimation (0, "animation", true);
+		meshRenderer = GetComponent<MeshRenderer> ();
 	}
 	
 	// Update is called once per frame
@@ -24,12 +31,12 @@ public class TouchRadiate : MonoBehaviour {
 				// Touch effect here.
 				gameObject.transform.position = sp;
 				gameObject.transform.rotation = Quaternion.identity;
-				if (!gameObject.GetComponent<ParticleSystem> ().isEmitting) {
-					gameObject.GetComponent<ParticleSystem> ().Play ();
-				}
+				//skeletonAnimation.state.SetAnimation (0, "animation", true);
+				meshRenderer.enabled = true;
 			}
 		} else {
-			gameObject.GetComponent<ParticleSystem> ().Stop ();
+			// gameObject.GetComponent<ParticleSystem> ().Stop ();
+			meshRenderer.enabled = false;
 		}
 	}
 

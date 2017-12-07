@@ -1,0 +1,27 @@
+
+TouchReact.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer_1
+  rotate: false
+  xy: 320, 6
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+Layer_2
+  rotate: true
+  xy: 161, 3
+  size: 123, 157
+  orig: 123, 157
+  offset: 0, 0
+  index: -1
+Layer_3
+  rotate: true
+  xy: 2, 2
+  size: 124, 157
+  orig: 124, 157
+  offset: 0, 0
+  index: -1

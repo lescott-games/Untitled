@@ -1,0 +1,27 @@
+
+rhappy.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+large
+  rotate: false
+  xy: 2, 89
+  size: 208, 137
+  orig: 208, 137
+  offset: 0, 0
+  index: -1
+mid
+  rotate: false
+  xy: 2, 2
+  size: 130, 85
+  orig: 130, 85
+  offset: 0, 0
+  index: -1
+small
+  rotate: false
+  xy: 134, 43
+  size: 65, 44
+  orig: 65, 44
+  offset: 0, 0
+  index: -1

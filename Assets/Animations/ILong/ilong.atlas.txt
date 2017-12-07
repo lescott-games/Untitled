@@ -1,0 +1,48 @@
+
+ilong.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+activated_body
+  rotate: false
+  xy: 244, 261
+  size: 206, 206
+  orig: 206, 206
+  offset: 0, 0
+  index: -1
+activated_border_circles
+  rotate: false
+  xy: 2, 225
+  size: 240, 242
+  orig: 240, 242
+  offset: 0, 0
+  index: -1
+activated_lines
+  rotate: false
+  xy: 452, 262
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+idle_body
+  rotate: false
+  xy: 244, 73
+  size: 186, 186
+  orig: 186, 186
+  offset: 0, 0
+  index: -1
+idle_border_circles
+  rotate: false
+  xy: 2, 2
+  size: 222, 221
+  orig: 222, 221
+  offset: 0, 0
+  index: -1
+idle_lines
+  rotate: false
+  xy: 659, 262
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1

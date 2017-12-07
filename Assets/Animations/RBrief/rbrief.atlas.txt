@@ -1,0 +1,55 @@
+
+rbrief.png
+size: 128,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arrowLeft
+  rotate: false
+  xy: 102, 37
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+arrowMid
+  rotate: false
+  xy: 73, 9
+  size: 22, 20
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+arrowRight
+  rotate: false
+  xy: 102, 14
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+circle
+  rotate: false
+  xy: 2, 18
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+glowLeft
+  rotate: false
+  xy: 44, 31
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+glowMid
+  rotate: false
+  xy: 73, 31
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+glowRight
+  rotate: false
+  xy: 44, 2
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1

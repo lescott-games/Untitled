@@ -1,0 +1,62 @@
+
+ibrief.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+activated_aura
+  rotate: false
+  xy: 238, 264
+  size: 206, 206
+  orig: 206, 206
+  offset: 0, 0
+  index: -1
+activated_circle_border
+  rotate: false
+  xy: 2, 234
+  size: 234, 236
+  orig: 234, 236
+  offset: 0, 0
+  index: -1
+activated_fill
+  rotate: false
+  xy: 238, 76
+  size: 186, 186
+  orig: 186, 186
+  offset: 0, 0
+  index: -1
+idle_fill
+  rotate: false
+  xy: 238, 76
+  size: 186, 186
+  orig: 186, 186
+  offset: 0, 0
+  index: -1
+activated_lines
+  rotate: false
+  xy: 446, 265
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+idle_center
+  rotate: false
+  xy: 2, 2
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1
+idle_circle_border
+  rotate: false
+  xy: 2, 11
+  size: 222, 221
+  orig: 222, 221
+  offset: 0, 0
+  index: -1
+idle_lines
+  rotate: false
+  xy: 653, 265
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
