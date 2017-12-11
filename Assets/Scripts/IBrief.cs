@@ -10,6 +10,7 @@ public class IBrief : MonoBehaviour {
 	private Background bgScript;
 	//private SpriteRenderer sr;
 	private SkeletonAnimation skeletonAnimation;
+	private PolygonCollider2D collider;
 
 	//public int colorChange = 20;
 
@@ -21,6 +22,7 @@ public class IBrief : MonoBehaviour {
 		//print ("Initial color: " + sr.color);
 		skeletonAnimation = GetComponent<SkeletonAnimation> ();
 		skeletonAnimation.state.SetAnimation (0, "idle", true);
+		collider = GetComponentInChildren<PolygonCollider2D> ();
 		//Destroy (gameObject, 4.0f);
 	}
 
@@ -40,11 +42,12 @@ public class IBrief : MonoBehaviour {
 			}
 		} else {
 			// gameObject.GetComponent<ParticleSystem> ().Stop ();
-			skeletonAnimation.state.SetAnimation (0, "idle", true);
-			print ("IBrief deactivated");
+			//skeletonAnimation.state.SetAnimation (0, "idle", true);
+			//ßprint ("IBrief deactivated");
 		}
 	}
 
+	/*
 	void OnMouseDrag () {
 		bgScript.ShiftUp ();
 	}
@@ -60,4 +63,13 @@ public class IBrief : MonoBehaviour {
 		skeletonAnimation.state.SetAnimation (0, "idle", true);
 		print ("IBrief deactivated");
 	}
+*/
+	public void OnChildMouseDown() {
+		skeletonAnimation.state.SetAnimation (0, "activated", true);
+	}
+
+	public void OnChildMouseUp() {
+		skeletonAnimation.state.SetAnimation (0, "idle", true);
+	}
+
 }

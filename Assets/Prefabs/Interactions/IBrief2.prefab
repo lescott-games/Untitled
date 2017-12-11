@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 4301486875702980}
   - component: {fileID: 50491593855990856}
   - component: {fileID: 60230313788711934}
+  - component: {fileID: 114577029391593008}
   m_Layer: 0
   m_Name: '[BoundingBox]activated_bounding_box'
   m_TagString: Untagged
@@ -74,6 +75,7 @@ GameObject:
   - component: {fileID: 4226152837878496}
   - component: {fileID: 50507049286230198}
   - component: {fileID: 60376975351434658}
+  - component: {fileID: 114332832895972482}
   m_Layer: 0
   m_Name: '[BoundingBox]idle_bounding_box'
   m_TagString: Untagged
@@ -421,6 +423,30 @@ MonoBehaviour:
   _animationName: idle
   loop: 1
   timeScale: 1
+--- !u!114 &114332832895972482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837561416518104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5571f9a87af943c196621c75c9b7e1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 114671293019812694}
+--- !u!114 &114577029391593008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717247092617352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5571f9a87af943c196621c75c9b7e1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 114671293019812694}
 --- !u!114 &114627977562567928
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameStart.cs" />
      <Compile Include="Assets\Scripts\IBrief.cs" />
+     <Compile Include="Assets\Scripts\IBriefBoundingBox.cs" />
      <Compile Include="Assets\Scripts\ILong.cs" />
      <Compile Include="Assets\Scripts\ITrail.cs" />
      <Compile Include="Assets\Scripts\RBrief.cs" />
