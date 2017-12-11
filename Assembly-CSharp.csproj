@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\RTooMuch2.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\Berserk.cs" />
      <Compile Include="Assets\Scripts\Border.cs" />
@@ -172,6 +173,7 @@
      <None Include="Assets\Animations\RTooMuch\rtoomuch.atlas.txt" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
      <None Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Screen.shader" />
+     <None Include="Assets\Animations\RNegativeAudio\rnegativeaudio.atlas.txt" />
      <None Include="Assets\Animations\IBrief\ibrief.atlas.txt" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
      <None Include="Assets\Animations\RHappy\rhappy.atlas.txt" />

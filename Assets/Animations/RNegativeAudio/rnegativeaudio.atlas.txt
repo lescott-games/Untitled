@@ -1,0 +1,20 @@
+
+rnegativeaudio.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bottom
+  rotate: false
+  xy: 2, 2
+  size: 201, 160
+  orig: 201, 160
+  offset: 0, 0
+  index: -1
+top
+  rotate: false
+  xy: 205, 4
+  size: 201, 158
+  orig: 201, 158
+  offset: 0, 0
+  index: -1
