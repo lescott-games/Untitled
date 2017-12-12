@@ -6,6 +6,8 @@ using Spine.Unity;
 
 public class IBrief : MonoBehaviour {
 
+	public float destroyTime = 3.0f;
+
 	private GameObject background;
 	private Background bgScript;
 	private SkeletonAnimation skeletonAnimation;
@@ -18,7 +20,7 @@ public class IBrief : MonoBehaviour {
 		skeletonAnimation = GetComponent<SkeletonAnimation> ();
 		skeletonAnimation.state.SetAnimation (0, "idle", true);
 		collider = GetComponentInChildren<PolygonCollider2D> ();
-		Destroy (gameObject, 4.0f);
+		Destroy (gameObject, destroyTime);
 	}
 
 	void Update () {

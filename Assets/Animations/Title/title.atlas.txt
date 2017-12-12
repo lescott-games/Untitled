@@ -1,0 +1,27 @@
+
+title.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+drip
+  rotate: false
+  xy: 308, 80
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+puddle
+  rotate: false
+  xy: 2, 2
+  size: 29, 7
+  orig: 29, 7
+  offset: 0, 0
+  index: -1
+title
+  rotate: false
+  xy: 2, 11
+  size: 304, 82
+  orig: 304, 82
+  offset: 0, 0
+  index: -1

@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "dl6j2AB07MvTV+vmzCiNqTUOv3Y",
+	"hash": "eK1uIjrzZPIFwebfV2VHJrRKb3o",
 	"spine": "3.6.48",
 	"width": 240,
 	"height": 242,
@@ -19,12 +19,21 @@
 	{ "name": "idle_border_circles", "bone": "idle_circles", "attachment": "idle_border_circles" },
 	{ "name": "idle_lines", "bone": "idle_body", "attachment": "idle_lines" },
 	{ "name": "activated_border_circles", "bone": "activated_circles", "attachment": "activated_border_circles" },
-	{ "name": "activated_lines", "bone": "activated_body", "attachment": "activated_lines" }
+	{ "name": "activated_lines", "bone": "activated_body", "attachment": "activated_lines" },
+	{ "name": "activated_body_bounding_box", "bone": "activated_body", "attachment": "activated_body_bounding_box" },
+	{ "name": "idle_body_bounding_box", "bone": "idle_body", "attachment": "idle_body_bounding_box" }
 ],
 "skins": {
 	"default": {
 		"activated_body": {
 			"activated_body": { "x": 5.13, "y": -1.7, "width": 206, "height": 206 }
+		},
+		"activated_body_bounding_box": {
+			"activated_body_bounding_box": {
+				"type": "boundingbox",
+				"vertexCount": 10,
+				"vertices": [ -62.87, 67.5, 3.54, 93.36, 75.54, 61.9, 100, 1.79, 72.74, -68.11, 17.52, -94.67, -28.62, -88.38, -74.05, -54.13, -89.43, -1.01, -79.64, 38.84 ]
+			}
 		},
 		"activated_border_circles": {
 			"activated_border_circles": { "x": 0.17, "y": -0.12, "width": 240, "height": 242 }
@@ -34,6 +43,13 @@
 		},
 		"idle_body": {
 			"idle_body": { "x": 4.73, "y": 1.7, "width": 186, "height": 186 }
+		},
+		"idle_body_bounding_box": {
+			"idle_body_bounding_box": {
+				"type": "boundingbox",
+				"vertexCount": 10,
+				"vertices": [ 1.46, 95.32, 72.06, 68.06, 97.22, 7.25, 71.36, -64.05, 15.44, -89.91, -32.09, -85.02, -76.83, -52.87, -92.21, 2.35, -81.72, 44.29, -62.15, 70.16 ]
+			}
 		},
 		"idle_border_circles": {
 			"idle_border_circles": { "x": -2.67, "y": 1.2, "width": 222, "height": 221 }

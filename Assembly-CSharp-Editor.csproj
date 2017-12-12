@@ -79,6 +79,7 @@
      <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\Editor\SkeletonUtilityInspector.cs" />
      <None Include="Assets\Spine\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
      <None Include="Assets\Spine\spine-unity\Shaders\Utility\HiddenPass.shader" />
+     <None Include="Assets\Animations\Title\title.atlas.txt" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
      <None Include="Assets\Animations\RBrief\rbrief.atlas.txt" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
@@ -91,6 +92,7 @@
      <None Include="Assets\Animations\RContent\rcontent.atlas.txt" />
      <None Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
+     <None Include="Assets\Animations\ILong\ilong.atlas.txt" />
      <None Include="Assets\Spine\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
      <None Include="Assets\Animations\RTooMuch\rtoomuch.atlas.txt" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
@@ -107,7 +109,6 @@
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesUnlit.shader" />
      <None Include="Assets\Spine\spine-unity\Shaders\Utility\Hidden-Spine-Bones.shader" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
-     <None Include="Assets\Animations\ILong\ilong.atlas.txt" />
      <None Include="Assets\Spine\spine-unity\Modules\Ghost\Shaders\Spine-Special-Skeleton-Ghost.shader" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteVertexLighting.cginc" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CameraDepthNormalsTexture.shader" />

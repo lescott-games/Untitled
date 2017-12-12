@@ -1,48 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Spine;
+using Spine.Unity;
 
 public class ILong : MonoBehaviour {
 
 	private GameObject background;
 	private Background bgScript;
-	private SpriteRenderer sr;
+	private SkeletonAnimation skeletonAnimation;
+	private PolygonCollider2D collider;
 
-	public int colorChange = 20;
 
-	// Use this for initialization
 	void Start () {
 		background = GameObject.FindGameObjectWithTag ("Background");
 		bgScript = background.GetComponent<Background> ();
-		sr = gameObject.GetComponent<SpriteRenderer> ();
-		print ("Initial color: " + sr.color);
+		skeletonAnimation = GetComponent<SkeletonAnimation> ();
+		skeletonAnimation.state.SetAnimation (0, "idle", true);
+		collider = GetComponentInChildren<PolygonCollider2D> ();
 		Destroy (gameObject, 5.0f);
 	}
 
-	void OnMouseDrag () {
-		bgScript.ShiftUp ();
-		// change color on tap for player feedback
+	void Update () {
+
 	}
 
-	void OnMouseDown() {
-/*		Color c = sr.color;
-		c.r = c.r + colorChange;
-		c.g = c.g + colorChange;
-		c.b = c.b + colorChange;
-		sr.color = c;
-		print ("Color: " + c);
-		*/
-		sr.color = Color.blue;
+	public void OnChildMouseDown() {
+		skeletonAnimation.state.SetAnimation (0, "activated", true);
 	}
 
-	void OnMouseUp(){
-/*		Color c = sr.color;
-		c.r = c.r - colorChange;
-		c.g = c.g - colorChange;
-		c.b = c.b - colorChange;
-		sr.color = c;
-		print ("Color: " + c);
-		*/
-		sr.color = Color.green;
+	public void OnChildMouseUp() {
+		skeletonAnimation.state.SetAnimation (0, "idle", true);
 	}
 }
