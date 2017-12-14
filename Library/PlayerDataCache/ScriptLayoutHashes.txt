@@ -78,6 +78,7 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RTooMuch2
 d42939b584492e64084d1e010e0c63cd Assembly-CSharp.dll:Spine.Unity.Modules.SkeletonRagdoll2D
 813462b6a4882296b960ae0af85d0e72 Assembly-CSharp.dll:Spine.Unity.Modules.SkeletonRagdoll
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ITrail
@@ -119,7 +120,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 5d60379d372a9f6486f3dee512ae55f2 Assembly-CSharp.dll:Spine.Unity.Modules.SkeletonUtilityEyeConstraint
-437f19363d211d096e3436f842f1b8c2 Assembly-CSharp.dll:.DebugInfo
+cb89c29b333ebdddaec1db87ef1ba866 Assembly-CSharp.dll:.DebugInfo
 1a904b248edf6fd97c7a683da93ac0dc Assembly-CSharp.dll:Spine.Unity.SkeletonAnimation
 5d68298013b676fb86a202fe38209eac Assembly-CSharp.dll:.Spawn
 f7e56271fe6b3d32ba6391c21ab5bd8e Assembly-CSharp.dll:Spine.Unity.Modules.SlotBlendModes
@@ -129,6 +130,7 @@ d0dded66b4790932f283ce432d298e3b Assembly-CSharp.dll:.IBrief
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ILong
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RHiLo
 175f7744bb52ba6ba74f7786542653c7 Assembly-CSharp.dll:Spine.Unity.SkeletonUtility
+585275f1b08f2f65250863c05bcee317 Assembly-CSharp.dll:.TitleAnim
 fd53a0d50fbeb9dad51d03f0802c3295 Assembly-CSharp.dll:Spine.Unity.Modules.SkeletonGhostRenderer
 57e29913d2a4f3a06abd69658bf79928 Assembly-CSharp.dll:.GameStart
 80dce36697fb8d46593f70f0d71d101b Assembly-CSharp.dll:Spine.Unity.AtlasAsset
@@ -169,6 +171,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+64c748e5e106450bace9c4df724b6dd2 Assembly-CSharp.dll:.ILongBoundingBox
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Spine.Unity.Modules.SkeletonPartsRenderer
 c4603d4291fec78b607835faaaad680a Assembly-CSharp.dll:Spine.Unity.SkeletonUtilityBone
@@ -177,6 +180,4 @@ c4603d4291fec78b607835faaaad680a Assembly-CSharp.dll:Spine.Unity.SkeletonUtility
 3df0f32a8a4c190d5f110fe2b16b9953 Assembly-CSharp.dll:.TouchRadiate
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RHappy
 b625b818a0199d664b575a3112c410b0 Assembly-CSharp.dll:.Berserk
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RTooMuch2
-64c748e5e106450bace9c4df724b6dd2 Assembly-CSharp.dll:.ILongBoundingBox
-585275f1b08f2f65250863c05bcee317 Assembly-CSharp.dll:.TitleAnim
+f2fefa91671090bea1d4ef797d23fa82 Assembly-CSharp.dll:.DebugSliderScript
