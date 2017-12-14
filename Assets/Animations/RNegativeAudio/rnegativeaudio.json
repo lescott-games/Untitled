@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "4ZqK2CKZDlJhVz8ff/5Zc+k0XfM",
+	"hash": "Od8tsGhgC06URPQr9haJvMKv0/M",
 	"spine": "3.6.48",
 	"width": 245,
 	"height": 317,
@@ -27,6 +27,13 @@
 },
 "animations": {
 	"animation": {
+		"slots": {
+			"bottom": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			}
+		},
 		"bones": {
 			"top": {
 				"translate": [

@@ -278,7 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   responses:
   - {fileID: 1377545980447560, guid: 271811aa863554613ad10423fba96fc5, type: 2}
-  - {fileID: 1879203766603706, guid: 71c7c0a20970f4571bff4f04cab91c02, type: 2}
+  - {fileID: 1924192877750498, guid: 68dd55f4c6fa64702b7d952e88ba6b0a, type: 2}
   - {fileID: 1093209004624876, guid: 4b2249a91b8094406ae0eb3ca0ce3470, type: 2}
   - {fileID: 1545312363258468, guid: 71cdb05f0be42463884fd9cd7add9463, type: 2}
   - {fileID: 1409422908261966, guid: 110f4d28d78b54371b0badaa155e1198, type: 2}
@@ -320,7 +320,7 @@ MonoBehaviour:
   - gameObject: {fileID: 1377545980447560, guid: 271811aa863554613ad10423fba96fc5,
       type: 2}
     weight: 0
-  - gameObject: {fileID: 1879203766603706, guid: 71c7c0a20970f4571bff4f04cab91c02,
+  - gameObject: {fileID: 1924192877750498, guid: 68dd55f4c6fa64702b7d952e88ba6b0a,
       type: 2}
     weight: 0
   - gameObject: {fileID: 1093209004624876, guid: 4b2249a91b8094406ae0eb3ca0ce3470,
