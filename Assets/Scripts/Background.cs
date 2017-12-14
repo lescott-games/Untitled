@@ -107,7 +107,7 @@ public class Background : MonoBehaviour {
 	{
 		rend.material.color = Color.Lerp (bottomColor, newColor, gameShift);
 		//gameShift -= (Time.deltaTime * (1 / gameDuration)) * upShift;
-		gameShift -= (shiftSpeed * shiftSpeedMultiplier) * 0.1f;
+		gameShift -= (shiftSpeed * shiftSpeedMultiplier);
 		gameShift = Mathf.Clamp (gameShift, 0.0f, 1.0f);
 		mainLight.intensity -= 0.0001f;
 	}
