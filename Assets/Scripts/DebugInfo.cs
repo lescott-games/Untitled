@@ -7,6 +7,7 @@ public class DebugInfo : MonoBehaviour {
 
 	public Button debugButton;
 	public Background background;
+	public Slider debugSlider;
 
 	private bool debugToggle = false;
 	private Button btn;
@@ -24,6 +25,7 @@ public class DebugInfo : MonoBehaviour {
 		btn.onClick.AddListener (ToggleInfo);
 		gameManager = GameObject.FindGameObjectWithTag ("GameController").GetComponent<GameManager> ();
 		spawn = GameObject.FindGameObjectWithTag ("GameController").GetComponent<Spawn> ();
+		debugSlider.gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -49,9 +51,11 @@ public class DebugInfo : MonoBehaviour {
 				"\nContinuous touch time: " + bg.touchTime + 
 				"\nGame phase: " + spawn.phase;
 			debugToggle = true;
+			debugSlider.gameObject.SetActive (true);
 		} else {
 			txt.text = "";
 			debugToggle = false;
+			debugSlider.gameObject.SetActive (false);
 		}
 	}
 }
