@@ -104,7 +104,7 @@ public class Spawn : MonoBehaviour {
 			//print ("Cum weight 2: " + cumulativeWeight);
 		}
 			
-		if (spawnList [chosenIndex].gameObject.name == "IBrief" || spawnList [chosenIndex].gameObject.name == "ILong"
+		if (spawnList [chosenIndex].gameObject.name == "IBrief2" || spawnList [chosenIndex].gameObject.name == "ILong2"
 			|| spawnList [chosenIndex].gameObject.name == "ITrail") {
 			print ("IBrief before position: " + pos);
 			Vector3 tmp;
