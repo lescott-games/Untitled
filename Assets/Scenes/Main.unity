@@ -1078,6 +1078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 1089091155}
+  debugSliderFill: {fileID: 951639706}
 --- !u!1 &1573579166
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DebugSliderScript : MonoBehaviour {
 
 	public Background background;
+	public Image debugSliderFill;
 
 	private Slider slider;
 
@@ -17,5 +18,11 @@ public class DebugSliderScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		slider.value = background.gameShift;
+		if (GameObject.Find("RRevert2(Clone)"))
+		{
+			debugSliderFill.color = new Color(128, 0, 128);
+		} else {
+			debugSliderFill.color = Color.yellow;
+		}
 	}
 }

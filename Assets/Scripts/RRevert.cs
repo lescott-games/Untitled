@@ -12,6 +12,7 @@ public class RRevert : MonoBehaviour {
 		background = GameObject.FindGameObjectWithTag ("Background");
 		bgScript = background.GetComponent<Background> ();
 		Destroy (gameObject, 3.0f);
+		print (gameObject.name);
 	}
 	
 	// Update is called once per frame
