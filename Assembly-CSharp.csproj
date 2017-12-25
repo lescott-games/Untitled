@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\DebugSliderScript.cs" />
+     <Compile Include="Assets\FingerCircle.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\Berserk.cs" />
      <Compile Include="Assets\Scripts\Border.cs" />
@@ -77,6 +78,7 @@
      <Compile Include="Assets\Scripts\Spawn.cs" />
      <Compile Include="Assets\Scripts\TitleAnim.cs" />
      <Compile Include="Assets\Scripts\TouchRadiate.cs" />
+     <Compile Include="Assets\Scripts\TouchReactTest.cs" />
      <Compile Include="Assets\Spine\spine-csharp\Animation.cs" />
      <Compile Include="Assets\Spine\spine-csharp\AnimationState.cs" />
      <Compile Include="Assets\Spine\spine-csharp\AnimationStateData.cs" />
