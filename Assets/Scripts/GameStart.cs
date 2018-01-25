@@ -32,8 +32,8 @@ public class GameStart : MonoBehaviour {
 		}
 		continueText.color = Color.Lerp (Color.black, Color.white, textBlink);
 
-		if (Input.anyKeyDown)
-			SceneManager.LoadScene ("Main");
+		//if (Input.anyKeyDown)
+			//SceneManager.LoadScene ("Main");
 			
 	}
 }

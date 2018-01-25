@@ -1,0 +1,13 @@
+
+BlankFingerCircle.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer_1
+  rotate: false
+  xy: 2, 2
+  size: 402, 401
+  orig: 402, 401
+  offset: 0, 0
+  index: -1

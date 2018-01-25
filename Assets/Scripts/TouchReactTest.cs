@@ -21,17 +21,20 @@ public class TouchReactTest : MonoBehaviour {
 				fingerCount++;
 				Vector3 sp = Camera.main.ScreenToWorldPoint (new Vector3 (touch.position.x, touch.position.y, 9));
 				if (fingerCircleList [modifiedFingerID] != null) {
+					fingerCircleList [modifiedFingerID].gameObject.SetActive (true);
 					fingerCircleList [modifiedFingerID].transform.position = sp;
-					fingerCircleList [modifiedFingerID].GetComponent<MeshRenderer> ().enabled = true;
+					//fingerCircleList [modifiedFingerID].GetComponent<MeshRenderer> ().enabled = true;
 				}
-				print ("Modified fingerID: " + modifiedFingerID + ", Transform position: " + fingerCircleList [modifiedFingerID].transform.position);
+				//print ("Modified fingerID: " + modifiedFingerID + ", Transform position: " + fingerCircleList [modifiedFingerID].transform.position);
 			} else {
-				fingerCircleList [modifiedFingerID].GetComponent<MeshRenderer> ().enabled = false;
+				//fingerCircleList [modifiedFingerID].GetComponent<MeshRenderer> ().enabled = false;
+				fingerCircleList [modifiedFingerID].gameObject.SetActive (false);
 			}
 
 		}
-		if (fingerCount > 0)
-			print("User has " + fingerCount + " finger(s) touching the screen");
+		if (fingerCount > 0) {
+			//print("User has " + fingerCount + " finger(s) touching the screen");
+		}
 	}
 		
 }

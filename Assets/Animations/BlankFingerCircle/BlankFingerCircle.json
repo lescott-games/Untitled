@@ -1,0 +1,30 @@
+{
+"skeleton": {
+	"hash": "pYP9Ou5i9+X/gsVjQUagWKANpHM",
+	"spine": "3.6.48",
+	"width": 392.14,
+	"height": 391.16,
+	"images": "../Illustrations/BlankFingerCircle/images/"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "circle", "bone": "root", "attachment": "circle" }
+],
+"skins": {
+	"default": {
+		"circle": {
+			"circle": { "path": "Layer_1", "x": -0.91, "y": 0.71, "scaleX": 0.975, "scaleY": 0.975, "width": 402, "height": 401 },
+			"circle_bounding_box": {
+				"type": "boundingbox",
+				"vertexCount": 11,
+				"vertices": [ 0.72, 199.12, 138.93, 142.35, 200.63, 5.38, 164.84, -111.85, 71.06, -183.42, 3.19, -199.47, -114.04, -162.45, -183.15, -81, -201.66, 9.08, -174.51, 100.4, -104.17, 173.2 ]
+			}
+		}
+	}
+},
+"animations": {
+	"animation": {}
+}
+}

@@ -1,21 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ILongBoundingBox.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Grief.cs">
     <Files>
-      <File FileName="Assets/Scripts/TitleAnim.cs" Line="30" Column="59" />
-      <File FileName="Assets/Scripts/IBrief.cs" Line="30" Column="34" />
-      <File FileName="Assets/Scripts/IBriefBoundingBox.cs" Line="20" Column="3" />
-      <File FileName="Assets/Scripts/RNegAudio.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/RContent.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/RHappy.cs" Line="9" Column="25" />
-      <File FileName="Assets/Scripts/RRevert.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Background.cs" Line="94" Column="24" />
-      <File FileName="Assets/Scripts/RTooMuch.cs" Line="42" Column="4" />
-      <File FileName="Assets/Scripts/TouchRadiate.cs" Line="33" Column="57" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Berserk.cs" Line="60" Column="3" />
-      <File FileName="Assets/Scripts/ILong.cs" Line="18" Column="38" />
-      <File FileName="Assets/Scripts/ILongBoundingBox.cs" Line="1" Column="1" />
+      <File FileName="Assets/Grief.cs" Line="14" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
