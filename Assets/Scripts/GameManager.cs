@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
 	public int timeSeconds;
 	public int timeMinutes;
 	public GameObject oContact;
+	public Grief grief;
 
 	private Spawn spawnScript;
 	private bool[] fingerArray = new bool[] { false, false, false, false, false };
@@ -72,6 +73,13 @@ public class GameManager : MonoBehaviour {
 			case TouchPhase.Ended:
 				if (fingerArray [touch.fingerId] == true) {
 					if (contactArray [touch.fingerId] != null) {
+						// Check type.
+						Contact c = contactArray [touch.fingerId].GetComponent<Contact>();
+						if (c.ctype == Contact.ContactType.Positive) {
+							grief.transform.localScale -= new Vector3(0.05f, 0.05f,  0);
+						} else if (c.ctype == Contact.ContactType.Negative) {
+							grief.transform.localScale += new Vector3(0.05f, 0.05f,  0);
+						}
 						print (contactArray [touch.fingerId]);
 						DestroyImmediate (contactArray [touch.fingerId], true);
 						print ("Destroyed!");
