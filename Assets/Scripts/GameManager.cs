@@ -75,10 +75,15 @@ public class GameManager : MonoBehaviour {
 					if (contactArray [touch.fingerId] != null) {
 						// Check type.
 						Contact c = contactArray [touch.fingerId].GetComponent<Contact>();
+						float contactLife = c.timeSeconds * 0.01f;
 						if (c.ctype == Contact.ContactType.Positive) {
-							grief.transform.localScale -= new Vector3(0.05f, 0.05f,  0);
+							grief.transform.localScale -= new Vector3(contactLife, contactLife,  0);
+							grief.contactLimit -= c.timeSeconds;
+							//grief.entropy += c.timeSeconds;
 						} else if (c.ctype == Contact.ContactType.Negative) {
-							grief.transform.localScale += new Vector3(0.05f, 0.05f,  0);
+							grief.transform.localScale += new Vector3(contactLife, contactLife,  0);
+							grief.contactLimit += c.timeSeconds;
+							//grief.entropy -= c.timeSeconds;
 						}
 						print (contactArray [touch.fingerId]);
 						DestroyImmediate (contactArray [touch.fingerId], true);

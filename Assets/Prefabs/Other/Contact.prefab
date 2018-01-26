@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ctype: 0
-  climit: 7
+  climit: 3
 --- !u!212 &212346063897518000
 SpriteRenderer:
   m_ObjectHideFlags: 1

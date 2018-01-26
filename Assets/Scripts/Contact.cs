@@ -7,11 +7,11 @@ public class Contact : MonoBehaviour {
 	public enum ContactType { Positive, Negative };
 
 	public ContactType ctype = ContactType.Positive;
-	public float climit = 7;
+	public float climit;
+	public float timeSeconds;
 
 	private float timer;
 	private float timeMinutes;
-	private float timeSeconds;
 	private bool tog;
 	private Renderer rend;
 	private TextMesh tm;
@@ -22,6 +22,7 @@ public class Contact : MonoBehaviour {
 		rend = gameObject.GetComponent<Renderer> ();
 		rend.material.color = Color.yellow;
 		tm = transform.GetChild (0).GetComponent<TextMesh> ();
+		climit = GameObject.Find ("BigCircle").GetComponent<Grief> ().contactLimit;
 	}
 	
 	// Update is called once per frame
